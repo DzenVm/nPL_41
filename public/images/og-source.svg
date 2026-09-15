@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="78%" cy="10%" r="90%">
+      <stop offset="0%" stop-color="#f2ead6"/>
+      <stop offset="100%" stop-color="#e8dcc0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g opacity="0.5" stroke="#16211c" stroke-opacity="0.08">
+    <path d="M0 150 H1200 M0 320 H1200 M0 490 H1200" stroke-width="1"/>
+    <path d="M220 0 V630 M620 0 V630 M960 0 V630" stroke-width="1"/>
+  </g>
+
+  <!-- route + islands motif, right side -->
+  <g transform="translate(760,80)">
+    <path d="M20 380 C120 300 160 260 120 200 C260 220 320 160 300 90"
+          fill="none" stroke="#a1502c" stroke-width="3" stroke-dasharray="1 11" stroke-linecap="round" opacity="0.8"/>
+    <g filter="none">
+      <path d="M0 400 C-40 385 -46 350 -10 335 C20 322 68 328 78 355 C120 352 118 392 78 400 C60 420 20 416 0 400 Z"
+            fill="#2f8577" stroke="#1f5c53" stroke-width="3"/>
+      <path d="M80 220 C55 208 56 182 90 172 C114 165 148 172 152 194 C176 194 174 220 150 226 C138 240 100 236 80 220 Z"
+            fill="#a9d0c6" stroke="#1f5c53" stroke-width="3"/>
+      <path d="M260 70 C238 58 240 34 270 26 C292 20 322 26 326 46 C348 46 346 70 324 76 C312 88 278 84 260 70 Z"
+            fill="#d9a13e" stroke="#b57a1e" stroke-width="3"/>
+    </g>
+  </g>
+
+  <g transform="translate(90,120)">
+    <rect width="30" height="6" rx="3" fill="#1f5c53"/>
+    <text x="0" y="38" font-family="'DejaVu Serif', serif" font-size="26" letter-spacing="2" fill="#1f5c53">STRATEGIA ARCHIPELAGU</text>
+  </g>
+
+  <text x="90" y="230" font-family="'DejaVu Serif', serif" font-size="58" fill="#16211c">Rozbudowujesz osadę</text>
+  <text x="90" y="298" font-family="'DejaVu Serif', serif" font-size="58" fill="#16211c">na archipelagu, w tempie,</text>
+  <text x="90" y="366" font-family="'DejaVu Serif', serif" font-size="58" fill="#16211c">które sam ustalasz</text>
+
+  <text x="90" y="430" font-family="'DejaVu Serif', serif" font-size="24" fill="#56675c">Gra przeglądarkowa — wyłącznie jeden gracz</text>
+
+  <g transform="translate(90,470)">
+    <rect width="150" height="46" rx="23" fill="#1f5c53"/>
+    <text x="75" y="30" text-anchor="middle" font-family="'DejaVu Serif', serif" font-size="18" fill="#f2ead6">bez limitu czasu</text>
+  </g>
+  <g transform="translate(260,470)">
+    <rect width="150" height="46" rx="23" fill="none" stroke="#16211c" stroke-opacity="0.3" stroke-width="1.5"/>
+    <text x="75" y="30" text-anchor="middle" font-family="'DejaVu Serif', serif" font-size="18" fill="#2d3b33">bez rywalizacji</text>
+  </g>
+</svg>

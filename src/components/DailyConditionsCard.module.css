@@ -1,0 +1,59 @@
+.panel {
+  padding: 1.9rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.3rem;
+}
+
+.head h3 {
+  font-size: 1.05rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: var(--ink-5);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.4rem;
+}
+
+.metric dt {
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-5);
+  margin-bottom: 0.25rem;
+}
+
+.metric dd {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--ink-9);
+  font-variant-numeric: tabular-nums;
+}
+
+.note {
+  margin-top: 1.3rem;
+  padding-top: 1.2rem;
+  border-top: 1px dashed var(--line);
+  font-size: 0.88rem;
+  color: var(--ink-7);
+}
+
+.seed {
+  margin-top: 0.9rem;
+  font-size: 0.74rem;
+  color: var(--ink-3);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}

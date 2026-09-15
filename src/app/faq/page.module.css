@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.item {
+  background: var(--paper-1);
+  padding: 1.6rem 1.8rem;
+}
+
+.item h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.item p {
+  color: var(--ink-7);
+  font-size: 0.95rem;
+}
+
+.groupLabel {
+  margin: 2.6rem 0 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-5);
+}
+
+.groupLabel:first-of-type {
+  margin-top: 0;
+}

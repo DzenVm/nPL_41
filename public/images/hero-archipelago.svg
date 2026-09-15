@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" role="img" aria-labelledby="t1 d1">
+  <title id="t1">Mapa archipelagu</title>
+  <desc id="d1">Stylizowana mapa kilku wysp połączonych trasami morskimi, z portem głównym i różą wiatrów.</desc>
+  <defs>
+    <radialGradient id="water" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#f2ead6"/>
+      <stop offset="100%" stop-color="#e8dcc0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#16211c" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="960" fill="url(#water)"/>
+
+  <g opacity="0.5" stroke="#16211c" stroke-opacity="0.08">
+    <path d="M0 120 H960 M0 280 H960 M0 440 H960 M0 600 H960 M0 760 H960" stroke-width="1"/>
+    <path d="M160 0 V960 M360 0 V960 M560 0 V960 M760 0 V960" stroke-width="1"/>
+  </g>
+
+  <!-- compass -->
+  <g transform="translate(838,122)" stroke="#2d3b33" fill="none" stroke-width="1.6">
+    <circle r="46" stroke-opacity="0.5"/>
+    <path d="M0 -46 L8 -8 L0 46 L-8 -8 Z" fill="#a1502c" stroke="none" opacity="0.85"/>
+    <path d="M-46 0 L-8 8 L46 0 L-8 -8 Z" fill="#2d3b33" stroke="none" opacity="0.35"/>
+    <circle r="3.5" fill="#16211c" stroke="none"/>
+  </g>
+
+  <!-- routes -->
+  <g fill="none" stroke="#a1502c" stroke-width="2.4" stroke-dasharray="1 10" stroke-linecap="round" opacity="0.75">
+    <path d="M300 700 C 260 560, 300 460, 360 360"/>
+    <path d="M300 700 C 430 640, 520 610, 620 560"/>
+    <path d="M300 700 C 360 780, 480 800, 610 760"/>
+    <path d="M620 560 C 680 480, 700 400, 660 300"/>
+  </g>
+
+  <!-- small vessel markers -->
+  <g fill="#16211c">
+    <path d="M355 470 l10 -4 10 4 -3 8 -14 0 z"/>
+    <path d="M470 620 l10 -4 10 4 -3 8 -14 0 z"/>
+    <path d="M660 430 l10 -4 10 4 -3 8 -14 0 z"/>
+  </g>
+
+  <!-- port -->
+  <g transform="translate(300,700)" filter="url(#soft)">
+    <rect x="-34" y="-10" width="68" height="24" rx="4" fill="#2d3b33"/>
+    <rect x="-44" y="-2" width="14" height="34" rx="2" fill="#2d3b33"/>
+    <rect x="30" y="-2" width="14" height="34" rx="2" fill="#2d3b33"/>
+  </g>
+
+  <!-- islands -->
+  <g filter="url(#soft)">
+    <path d="M180 620 C120 600 90 540 130 500 C160 470 230 460 270 490 C320 470 380 500 370 550 C440 560 420 630 350 640 C300 670 210 660 180 620 Z"
+          fill="#2f8577" stroke="#1f5c53" stroke-width="3"/>
+    <g fill="#1f5c53" opacity="0.55">
+      <circle cx="210" cy="540" r="5"/><circle cx="240" cy="520" r="4"/>
+      <circle cx="280" cy="555" r="5"/><circle cx="200" cy="580" r="4"/>
+      <circle cx="330" cy="590" r="4.5"/>
+    </g>
+  </g>
+
+  <g filter="url(#soft)">
+    <path d="M590 540 C540 520 530 470 580 450 C620 434 690 440 710 475 C760 470 770 530 720 550 C690 580 620 575 590 540 Z"
+          fill="#a9d0c6" stroke="#1f5c53" stroke-width="3"/>
+    <g fill="#1f5c53" opacity="0.5">
+      <circle cx="620" cy="500" r="4.5"/><circle cx="660" cy="485" r="4"/>
+      <circle cx="690" cy="515" r="4.5"/>
+    </g>
+  </g>
+
+  <g filter="url(#soft)">
+    <path d="M360 310 C320 290 320 250 365 235 C400 222 455 230 465 265 C505 265 505 315 465 325 C440 350 385 340 360 310 Z"
+          fill="#2f8577" stroke="#1f5c53" stroke-width="3"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <path d="M580 780 C550 765 550 730 590 720 C620 712 665 720 670 748 C700 748 698 785 665 792 C645 810 605 805 580 780 Z"
+          fill="#d9a13e" stroke="#b57a1e" stroke-width="3"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <path d="M700 250 C670 235 672 205 705 196 C730 189 765 196 770 218 C795 218 793 248 767 254 C752 268 720 264 700 250 Z"
+          fill="#a9d0c6" stroke="#1f5c53" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="t5 d5">
+  <title id="t5">Diagram ścieżek rozwoju</title>
+  <desc id="d5">Rozgałęziony diagram czterech ścieżek rozwoju osady wychodzących ze wspólnego punktu startowego.</desc>
+
+  <rect width="640" height="760" fill="#faf6ec"/>
+
+  <g fill="none" stroke="#16211c" stroke-opacity="0.28" stroke-width="2.4">
+    <path d="M320 120 C 320 180, 130 180, 100 260"/>
+    <path d="M320 120 C 320 180, 260 190, 240 260"/>
+    <path d="M320 120 C 320 180, 380 190, 400 260"/>
+    <path d="M320 120 C 320 180, 510 180, 540 260"/>
+
+    <path d="M100 300 L100 360"/>
+    <path d="M240 300 L240 360"/>
+    <path d="M400 300 L400 360"/>
+    <path d="M540 300 L540 360"/>
+  </g>
+
+  <!-- root -->
+  <g transform="translate(320,80)">
+    <circle r="46" fill="#2d3b33"/>
+    <text y="6" text-anchor="middle" fill="#f2ead6" font-family="Georgia, serif" font-size="14">start</text>
+  </g>
+
+  <!-- level 1 nodes -->
+  <g font-family="Georgia, serif" font-size="15" fill="#16211c">
+    <g transform="translate(100,280)">
+      <circle r="38" fill="#2f8577"/>
+      <text y="60" text-anchor="middle">Przetwórstwo</text>
+    </g>
+    <g transform="translate(240,280)">
+      <circle r="38" fill="#a9d0c6"/>
+      <text y="60" text-anchor="middle">Flota</text>
+    </g>
+    <g transform="translate(400,280)">
+      <circle r="38" fill="#d9a13e"/>
+      <text y="60" text-anchor="middle">Obserwacja</text>
+    </g>
+    <g transform="translate(540,280)">
+      <circle r="38" fill="#c17045"/>
+      <text y="60" text-anchor="middle">Zabudowa</text>
+    </g>
+  </g>
+
+  <!-- level 2 nodes -->
+  <g fill="#16211c" opacity="0.85">
+    <circle cx="70" cy="400" r="16"/>
+    <circle cx="130" cy="410" r="16"/>
+    <circle cx="212" cy="400" r="16"/>
+    <circle cx="268" cy="412" r="16"/>
+    <circle cx="372" cy="412" r="16"/>
+    <circle cx="428" cy="400" r="16"/>
+    <circle cx="512" cy="412" r="16"/>
+    <circle cx="568" cy="400" r="16"/>
+  </g>
+  <g stroke="#16211c" stroke-opacity="0.2" stroke-width="2">
+    <line x1="100" y1="360" x2="70" y2="400"/>
+    <line x1="100" y1="360" x2="130" y2="410"/>
+    <line x1="240" y1="360" x2="212" y2="400"/>
+    <line x1="240" y1="360" x2="268" y2="412"/>
+    <line x1="400" y1="360" x2="372" y2="412"/>
+    <line x1="400" y1="360" x2="428" y2="400"/>
+    <line x1="540" y1="360" x2="512" y2="412"/>
+    <line x1="540" y1="360" x2="568" y2="400"/>
+  </g>
+
+  <rect x="60" y="470" width="520" height="220" rx="16" fill="#f2ead6" stroke="#16211c" stroke-opacity="0.12"/>
+  <text x="90" y="508" font-family="Georgia, serif" font-size="15" fill="#2d3b33" font-style="italic">
+    ścieżki łączą się ze wspólną pulą zasobów portu —
+  </text>
+  <text x="90" y="530" font-family="Georgia, serif" font-size="15" fill="#2d3b33" font-style="italic">
+    wybór jednej realnie spowalnia pozostałe, przynajmniej na starcie.
+  </text>
+
+  <g transform="translate(90,570)" font-family="Georgia, serif" font-size="13" fill="#56675c">
+    <text y="0">Przetwórstwo — mniejsza objętość ładunku przy tej samej wartości</text>
+    <text y="26">Flota — mniejsza zależność od wynajętych jednostek</text>
+    <text y="52">Obserwacja — wcześniejszy odczyt warunków i dostęp do dalszych złóż</text>
+    <text y="78">Zabudowa — więcej rąk do pracy, większe zapotrzebowanie na żywność</text>
+  </g>
+</svg>
