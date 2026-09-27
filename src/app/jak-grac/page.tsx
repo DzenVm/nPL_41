@@ -47,11 +47,12 @@ export default function JakGracPage() {
       <header className={legal.header}>
         <div className="wrap">
           <span className="eyebrow">Mechanika rozgrywki</span>
-          <h1>Jak faktycznie wygląda rozgrywka, krok po kroku</h1>
+          <h1>Od portu do archipelagu — poznaj koncepcję</h1>
           <p className="lede" style={{ marginTop: "1rem" }}>
-            Ta strona nie sprzedaje ogólników. Opisuje dokładnie, co widzisz
-            w pierwszej godzinie, w jakiej kolejności odsłaniają się systemy
-            i z czego faktycznie składa się jeden cykl rozgrywki.
+            Poniżej opisujemy założenia rozgrywki: kolejność rozwoju osady,
+            rolę magazynów i cykl decyzji. To przewodnik po koncepcji;
+            pełna gra nie jest udostępniona w tym serwisie. Działające
+            demonstracje znajdziesz na stronie głównej.
           </p>
         </div>
       </header>

@@ -6,30 +6,32 @@
 ----------------------------------------------------------------*/
 
 :root {
-  --paper-0: #faf6ec;
-  --paper-1: #f2ead6;
-  --paper-2: #e8dcc0;
-  --ink-9: #16211c;
-  --ink-7: #2d3b33;
-  --ink-5: #56675c;
-  --ink-3: #8a988c;
+  --paper-0: #f5f7fa;
+  --paper-1: #e9eff5;
+  --paper-2: #d8e3ee;
+  --ink-9: #172a40;
+  --ink-7: #354a60;
+  --ink-5: #52677c;
+  --ink-3: #8293a4;
   --line: rgba(22, 33, 28, 0.16);
   --line-soft: rgba(22, 33, 28, 0.08);
 
-  --teal-7: #1f5c53;
-  --teal-5: #2f8577;
-  --teal-3: #a9d0c6;
+  --teal-7: #245581;
+  --teal-5: #3476a9;
+  --teal-3: #c5dcec;
 
-  --amber-6: #b57a1e;
-  --amber-4: #d9a13e;
-  --amber-2: #f1dcaa;
+  --amber-6: #97512e;
+  --amber-4: #c77446;
+  --amber-2: #f5dfce;
 
-  --rust-6: #a1502c;
-  --rust-4: #c17045;
+  --rust-6: #934527;
+  --rust-4: #b96744;
 
   --radius-s: 6px;
-  --radius-m: 14px;
-  --radius-l: 26px;
+  --radius-m: 10px;
+  --radius-l: 18px;
+
+  --accent-text: var(--teal-7);
 
   --shadow-card: 0 1px 0 var(--line), 0 12px 28px -18px rgba(22, 33, 28, 0.45);
 
@@ -41,17 +43,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper-0: #12181a;
-    --paper-1: #182220;
-    --paper-2: #202d29;
-    --ink-9: #eef1e8;
-    --ink-7: #cdd6cb;
-    --ink-5: #9fada2;
-    --ink-3: #6d7d72;
+    --paper-0: #121c29;
+    --paper-1: #192737;
+    --paper-2: #24364a;
+    --ink-9: #edf3fa;
+    --ink-7: #cbd8e6;
+    --ink-5: #a2b6cd;
+    --ink-3: #8097af;
     --line: rgba(238, 241, 232, 0.14);
     --line-soft: rgba(238, 241, 232, 0.07);
-    --teal-3: #143b34;
-    --amber-2: #3a2c12;
+    --teal-3: #203c57;
+    --amber-2: #493121;
+    --accent-text: #93c9f0;
     color-scheme: dark;
   }
 }
@@ -163,7 +166,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal-7);
+  color: var(--accent-text);
 }
 
 .eyebrow::before {
@@ -193,7 +196,7 @@ button {
   align-items: center;
   gap: 0.6em;
   padding: 0.82em 1.5em;
-  border-radius: 999px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 0.98rem;
   border: 1px solid transparent;
@@ -208,7 +211,7 @@ button {
 
 .btn--primary {
   background: var(--teal-7);
-  color: var(--paper-0);
+  color: #ffffff;
   box-shadow: 0 10px 24px -12px rgba(31, 92, 83, 0.65);
 }
 
@@ -232,7 +235,7 @@ button {
   padding: 0.3em 0.8em;
   border-radius: 999px;
   background: var(--teal-3);
-  color: var(--teal-7);
+  color: var(--accent-text);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -279,3 +282,6 @@ button {
     transition-duration: 0.001ms !important;
   }
 }
+
+:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 4px; }
+[id] { scroll-margin-top: 9rem; }

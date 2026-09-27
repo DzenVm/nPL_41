@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Newsreader, Public_Sans } from "next/font/google";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SITE_URL, SITE_LOCALE, SITE_DESCRIPTION } from "@/lib/site";
+import { SITE_URL, SITE_NAME, SITE_LOCALE, SITE_DESCRIPTION } from "@/lib/site";
 import "./globals.css";
 
 const display = Newsreader({
@@ -21,8 +21,8 @@ const text = Public_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Przeglądarkowa strategia jednoosobowa osadzona na archipelagu",
-    template: "%s — strategia archipelagu",
+    default: "Frebamee — atlas spokojnej strategii",
+    template: "%s — Frebamee",
   },
   description: SITE_DESCRIPTION,
   keywords: [
@@ -41,21 +41,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE_LOCALE,
     url: SITE_URL,
-    title: "Przeglądarkowa strategia jednoosobowa osadzona na archipelagu",
+    title: "Frebamee — atlas spokojnej strategii",
     description: SITE_DESCRIPTION,
-    siteName: "strategia archipelagu",
+    siteName: SITE_NAME,
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Strategia archipelagu — gra przeglądarkowa dla jednego gracza",
+        alt: "Frebamee — poznaj wyspy, zaplanuj dostawy",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Przeglądarkowa strategia jednoosobowa osadzona na archipelagu",
+    title: "Frebamee — atlas spokojnej strategii",
     description: SITE_DESCRIPTION,
     images: ["/images/og-image.png"],
   },
@@ -67,24 +67,18 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#faf6ec" },
-    { media: "(prefers-color-scheme: dark)", color: "#12181a" },
+    { media: "(prefers-color-scheme: light)", color: "#f5f7fa" },
+    { media: "(prefers-color-scheme: dark)", color: "#121c29" },
   ],
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Game",
-  name: "Przeglądarkowa strategia jednoosobowa osadzona na archipelagu",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  url: SITE_URL,
   description: SITE_DESCRIPTION,
-  genre: "Strategia ekonomiczna",
-  numberOfPlayers: {
-    "@type": "QuantitativeValue",
-    value: 1,
-  },
-  gamePlatform: "Przeglądarka internetowa",
   inLanguage: "pl-PL",
-  applicationCategory: "Game",
 };
 
 export default function RootLayout({

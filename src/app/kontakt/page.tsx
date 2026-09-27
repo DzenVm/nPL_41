@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import legal from "../legal.module.css";
-import { SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -9,8 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function KontaktPage() {
-  const host = new URL(SITE_URL).host;
-  const contactEmail = `kontakt@${host}`;
+  const contactEmail = CONTACT_EMAIL;
 
   return (
     <>
@@ -34,9 +33,8 @@ export default function KontaktPage() {
             </strong>
           </p>
           <p>
-            Adres jest powiązany z domeną tej strony i zostanie zaktualizowany
-            po przypisaniu docelowej domeny do projektu. Odpowiedzi udzielane
-            są w dni robocze.
+            W wiadomości podaj adres podstrony oraz krótki opis pytania lub
+            zauważonego problemu. Nie przesyłaj haseł ani danych płatniczych.
           </p>
         </div>
       </section>

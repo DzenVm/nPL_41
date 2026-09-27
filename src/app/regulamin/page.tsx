@@ -14,7 +14,7 @@ export default function RegulaminPage() {
         <div className="wrap">
           <span className="eyebrow">Dokument prawny</span>
           <h1>Regulamin serwisu</h1>
-          <p className={legal.updated}>Ostatnia aktualizacja: wraz z uruchomieniem serwisu pod docelową domeną.</p>
+          <p className={legal.updated}>Ostatnia aktualizacja: 27 września 2026 r.</p>
         </div>
       </header>
 
@@ -23,16 +23,16 @@ export default function RegulaminPage() {
           <h2>1. Przedmiot regulaminu</h2>
           <p>
             Regulamin określa zasady korzystania z serwisu internetowego
-            zawierającego opis oraz udostępnionego fragmentu przeglądarkowej
-            strategii jednoosobowej, opisanej na stronie głównej i podstronach
-            tego serwisu.
+            Frebamee pod adresem frebamee.biz, zawierającego opis koncepcji
+            strategii jednoosobowej oraz dwie demonstracje mechaniki.
+            Serwis nie udostępnia pełnej gry.
           </p>
 
           <h2>2. Warunki korzystania</h2>
           <ul>
             <li>Korzystanie z serwisu nie wymaga rejestracji ani podawania danych osobowych.</li>
             <li>Do korzystania wystarczy aktualna przeglądarka internetowa z obsługą JavaScriptu oraz połączenie z siecią.</li>
-            <li>Stan rozgrywki zapisywany jest lokalnie w przeglądarce użytkownika i nie jest przenoszony automatycznie między urządzeniami.</li>
+            <li>Ustawienia demonstracji nie są zapisywane trwale i wracają do wartości początkowych po odświeżeniu strony.</li>
           </ul>
 
           <h2>3. Charakter rozgrywki</h2>
@@ -58,9 +58,8 @@ export default function RegulaminPage() {
             Operator dokłada starań, aby treści serwisu i opisany w nim stan
             rozgrywki były prezentowane rzetelnie i aktualnie. Serwis może być
             okresowo niedostępny w związku z pracami technicznymi. Operator
-            nie ponosi odpowiedzialności za utratę danych zapisanych lokalnie
-            w przeglądarce użytkownika, w tym w wyniku wyczyszczenia danych
-            witryny przez samego użytkownika.
+            nie ponosi odpowiedzialności za decyzje podejmowane na podstawie poglądowych symulacji.
+            Symulacja pogody nie służy do planowania rzeczywistej żeglugi.
           </p>
 
           <h2>6. Zgłaszanie nieprawidłowości</h2>

@@ -5,7 +5,7 @@ export function DailyConditionsCard({ conditions }: { conditions: DailyCondition
   return (
     <div className={`card ${styles.panel}`}>
       <div className={styles.head}>
-        <h3>Silnik pogodowy — odczyt z dzisiaj</h3>
+        <h3>Warunki na wyspach — symulacja</h3>
         <span className={styles.date}>{conditions.dateLabel}</span>
       </div>
 
@@ -31,10 +31,9 @@ export function DailyConditionsCard({ conditions }: { conditions: DailyCondition
       </dl>
 
       <p className={styles.note}>
-        {conditions.frontNote}. To nie jest licznik na potrzeby strony — wartości
-        powyżej liczy ten sam mechanizm, który w rozgrywce ustala dzienne warunki
-        startowe na podstawie daty. Przelicza się on ponownie przy każdym wejściu
-        na stronę, po stronie serwera.
+        {conditions.frontNote}. To dane symulowane na potrzeby demonstracji.
+        Ta sama data daje te same warunki. Nie są to pomiary ani prognoza
+        pogody dla rzeczywistego miejsca.
       </p>
       <p className={styles.seed}>ziarno dnia: {conditions.seedLabel}</p>
     </div>

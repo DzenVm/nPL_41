@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className={`wrap ${styles.grid}`}>
         <div>
           <p className={styles.lead}>
-            Materiały poglądowe dotyczące przeglądarkowej strategii jednoosobowej
+            Frebamee — materiały poglądowe dotyczące przeglądarkowej strategii jednoosobowej
             osadzonej na archipelagu: logistyka, rozwój i decyzje rozłożone
             w czasie, bez trybu rywalizacji z innymi graczami.
           </p>
@@ -32,8 +32,8 @@ export function SiteFooter() {
         </nav>
       </div>
       <div className={`wrap ${styles.bottom}`}>
-        <span>© {year}. Wszelkie prawa zastrzeżone.</span>
-        <span>Wersja przeglądarkowa, jedna osoba, własne tempo.</span>
+        <span>© {year} Frebamee. Wszelkie prawa zastrzeżone.</span>
+        <span>frebamee.biz · Koncepcja i demonstracje mechaniki.</span>
       </div>
     </footer>
   );
