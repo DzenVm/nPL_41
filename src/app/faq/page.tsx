@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 
 const GROUPS = [
   {
+    label: "Co jest dostępne na stronie",
+    items: [{
+      q: "Czy Frebamee udostępnia pełną grę?",
+      a: "Nie. Serwis opisuje koncepcję strategii i udostępnia dwie demonstracje: symulowane warunki pogodowe oraz interaktywny podział zasobów. Dalsze odpowiedzi o rozgrywce odnoszą się do opisanej koncepcji.",
+    }],
+  },
+  {
     label: "Zasady i rozgrywka",
     items: [
       {
@@ -52,7 +59,7 @@ const GROUPS = [
       },
       {
         q: "Gdzie zapisywany jest postęp?",
-        a: "Lokalnie, w pamięci przeglądarki na danym urządzeniu. Zmiana przeglądarki albo wyczyszczenie danych witryny oznacza start od nowa.",
+        a: "Demonstracja nie zapisuje postępu. Ustawienia suwaków pozostają aktywne podczas korzystania z panelu, a po odświeżeniu strony wracają do wartości początkowych.",
       },
     ],
   },
@@ -81,7 +88,7 @@ export default function FaqPage() {
           <p className="lede" style={{ marginTop: "1rem" }}>
             Pogrupowane według tematu — zasady rozgrywki, wymagania techniczne
             i kwestie dostępu. Jeśli czegoś brakuje, strona kontaktowa prowadzi
-            do formy zgłoszenia pytania.
+            do adresu e-mail.
           </p>
         </div>
       </header>

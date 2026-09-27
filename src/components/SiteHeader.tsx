@@ -12,7 +12,7 @@ export function SiteHeader() {
   return (
     <header className={styles.header}>
       <div className={`wrap ${styles.row}`}>
-        <Link href="/" className={styles.mark} aria-label="Strona główna">
+        <Link href="/" className={styles.mark} aria-label="Frebamee — strona główna">
           <span className={styles.glyph} aria-hidden="true">
             <svg viewBox="0 0 32 32" width="30" height="30">
               <path
@@ -27,8 +27,8 @@ export function SiteHeader() {
             </svg>
           </span>
           <span className={styles.word}>
-            strategia
-            <em>archipelagu</em>
+            Frebamee
+            <em>atlas strategii</em>
           </span>
         </Link>
         <nav className={styles.nav} aria-label="Nawigacja główna">

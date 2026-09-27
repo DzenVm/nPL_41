@@ -9,7 +9,7 @@ import { getDailyConditions } from "@/lib/conditions";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Strona główna",
+  title: "Atlas spokojnej strategii",
 };
 
 const SYSTEMS = [
@@ -109,34 +109,34 @@ export default function HomePage() {
       <section className={styles.hero}>
         <div className={`wrap ${styles.heroGrid}`}>
           <div>
-            <span className="eyebrow">Gra przeglądarkowa · wyłącznie jeden gracz</span>
+            <span className="eyebrow">Frebamee · dziennik wyspiarskiej strategii</span>
             <h1 className={styles.h1}>
-              Rozbudowujesz <em>osadę na archipelagu</em>, w tempie, które sam ustalasz
+              Małe wyspy. <em>Przemyślane decyzje.</em> Twój własny kurs.
             </h1>
             <p className="lede">
-              Zero limitu czasu na turę, zero rywalizacji z innymi kontami i zero
-              powiadomień ściągających cię z powrotem o dziewiątej wieczorem.
-              Otwierasz kartę przeglądarki, sprawdzasz stan portów i magazynów,
-              podejmujesz kilka decyzji i zamykasz ją — albo zostajesz dłużej
-              i układasz trasy zaopatrzenia na cały najbliższy sezon.
+              Odkryj, jak port, zapasy i pogoda tworzą jeden system.
+              Frebamee przedstawia koncepcję spokojnej strategii dla jednej
+              osoby: od pierwszej dostawy po sieć połączeń między wyspami.
+              Przesuń suwak w demonstracji i zobacz, jak zmiana priorytetu
+              wpływa na równowagę osady.
             </p>
             <div className={styles.heroActions}>
-              <Link href="/jak-grac" className="btn btn--primary">
-                Zobacz mechanikę rozgrywki
-              </Link>
+              <a href="#demonstracja" className="btn btn--primary">
+                Wypróbuj podział zasobów
+              </a>
               <a href="#systemy" className="btn btn--ghost">
-                Sześć systemów gry
+                Poznaj atlas mechaniki
               </a>
             </div>
 
             <div className={styles.factRow}>
               <div className={styles.fact}>
-                <strong>1</strong>
-                <span>gracz w rozgrywce, bez trybu PvP</span>
+                <strong>Solo</strong>
+                <span>koncepcja dla jednej osoby</span>
               </div>
               <div className={styles.fact}>
-                <strong>0 zł</strong>
-                <span>na instalację — działa w karcie przeglądarki</span>
+                <strong>2 panele</strong>
+                <span>do poznania mechaniki</span>
               </div>
               <div className={styles.fact}>
                 <strong>6</strong>
@@ -144,7 +144,7 @@ export default function HomePage() {
               </div>
               <div className={styles.fact}>
                 <strong>bez zegara</strong>
-                <span>cykl rusza dopiero po twojej decyzji</span>
+                <span>poznawaj we własnym tempie</span>
               </div>
             </div>
           </div>
@@ -161,11 +161,18 @@ export default function HomePage() {
         </div>
       </section>
 
+      <aside className={`wrap ${styles.demoNote}`}>
+        <strong>Co znajdziesz we Frebamee?</strong>
+        <p>Atlas koncepcji gry oraz dwa przykłady mechaniki. Pełna gra nie jest
+          tutaj udostępniona. Panel zasobów działa bez konta i płatności;
+          jego ustawienia resetują się po odświeżeniu strony.</p>
+      </aside>
+
       <section className={styles.section}>
         <div className="wrap">
           <div className={styles.sectionHead}>
-            <span className="eyebrow">Opis rozgrywki</span>
-            <h2>Zarządzanie, które nie czeka na zegar</h2>
+            <span className="eyebrow">Założenia koncepcji</span>
+            <h2>Najpierw port. Potem połączenia.</h2>
           </div>
 
           <div className={styles.prose}>
@@ -218,16 +225,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.sectionAlt}`}>
+      <section className={`${styles.section} ${styles.sectionAlt}`} id="demonstracja">
         <div className="wrap">
           <div className={styles.sectionHead}>
-            <span className="eyebrow">Fragmenty działającej mechaniki</span>
-            <h2>Dwa elementy silnika, policzone na żywo</h2>
+            <span className="eyebrow">Pracownia planowania</span>
+            <h2>Sprawdź, co zmienia jedna decyzja</h2>
             <p className="lede" style={{ marginTop: "0.8rem" }}>
-              Poniższe dwa panele nie są ilustracją poglądową — to fragmenty
-              tej samej logiki, która stoi za częścią systemów opisanych na tej
-              stronie. Pierwszy przelicza się po stronie serwera przy każdym
-              wejściu na stronę, drugi reaguje na twój ruch w przeglądarce.
+              Po lewej znajdziesz symulowane warunki dla wysp, po prawej —
+              podział zasobów między zapasy i rozwój. Przesuń suwak i porównaj
+              wskazówki dla różnych ustawień. Odczyty pogodowe są częścią
+              demonstracji, a nie rzeczywistą prognozą.
             </p>
           </div>
 
@@ -493,7 +500,7 @@ export default function HomePage() {
 
       <section className={styles.closing}>
         <div className="wrap">
-          <h2>Zacznij od jednego portu i jednej trasy</h2>
+          <h2>Wyznacz pierwszą trasę w swoim planie</h2>
           <p className="lede">
             Pełny opis pierwszych decyzji, kolejności odsłaniania systemów
             i tego, czego można się spodziewać w pierwszej godzinie, znajdziesz

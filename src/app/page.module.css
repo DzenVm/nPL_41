@@ -16,7 +16,7 @@
 
 .h1 em {
   font-style: italic;
-  color: var(--teal-7);
+  color: var(--accent-text);
 }
 
 .heroActions {
@@ -267,7 +267,7 @@
 .closing h2 {
   font-size: clamp(1.7rem, 1.4rem + 1.4vw, 2.5rem);
   max-width: 30ch;
-  margin-inline: auto 1rem;
+  margin-inline: auto;
   margin-bottom: 1.1rem;
 }
 
@@ -306,3 +306,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+.demoNote {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--amber-4);
+  background: var(--paper-1);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+}
+.demoNote strong { display: block; margin-bottom: 0.35rem; }
+.demoNote p { color: var(--ink-7); max-width: 90ch; font-size: 0.95rem; }
+.heroArt { border-bottom: 5px solid var(--amber-4); }
